@@ -1,0 +1,112 @@
+README.md
+# OSINT-AI — Personal OSINT Playbook & Workspace
+
+**Purpose:** This repository is a structured workspace to plan, conduct, and document Open-Source Intelligence (OSINT) research for academic and legitimate investigative use (political science, international relations, security studies).  
+It stores notes, plans, and small utilities — not sensitive data.
+
+**Indexing token (for GitHub search / ChatGPT):** `INDEX_TEST_TOKEN__OSINT-AI__2025-08-10`
+
+---
+
+## 1) Rules of engagement (ethical & legal)
+
+- **Only public sources.** Respect Terms of Service; no intrusion, bypassing access controls, or social engineering.  
+- **Privacy first.** Avoid personal data unless clearly public and necessary for an academic purpose.  
+- **Attribution & traceability.** Record URLs, timestamps, and sources’ provenance.  
+- **Verification.** Cross-check facts with independent sources before drawing conclusions.
+
+---
+
+## 2) Core workflow (PACER)
+
+1. **Problem framing** — define the research question (who/what/where/when/why), scope, and success criteria.  
+2. **Acquisition plan** — list sources, queries, filters, and collection cadence.  
+3. **Collection** — capture URLs, snapshots, hashes; log context.  
+4. **Evaluation** — source reliability, bias, corroboration, temporal consistency.  
+5. **Reporting** — clear notes, citations, and limits/uncertainties.
+
+---
+
+## 3) Folder convention
+
+notes/ # working notes, leads, scratchpads
+reports/ # cleaned analyses with citations
+sources/ # source lists (feeds, portals, APIs)
+queries/ # saved queries, operators, dorks
+data/ # small CSV/JSON tables (non-sensitive)
+scripts/ # lightweight utilities (safe, ToS-compliant)
+
+---
+
+## 4) Minimal templates
+
+### 4.1 Research Note (`notes/<topic>.md`)
+Topic / Case:
+Scope & Question:
+Hypotheses (H1/H2):
+Key Entities:
+Timeframe:
+
+Collection Log (URL | Title | Date | Note):
+
+ | | |
+
+Findings:
+Confidence & Limits:
+Topic / Case:
+Scope & Question:
+Hypotheses (H1/H2):
+Key Entities:
+Timeframe:
+
+### 4.2 Source Register (`sources/<domain>.md`)
+Domain/Platform:
+Access notes / ToS:
+Useful endpoints / advanced search:
+Update cadence:
+Credibility/known biases:
+---
+
+## 5) Saved operators (quick start)
+
+Put these in `queries/web-operators.md`:
+
+- **Generic:** `"keyword A" AND "keyword B" site:.gov filetype:pdf after:2023-01-01`  
+- **Domain scoping:** `site:eeas.europa.eu "sanctions" filetype:pdf`  
+- **Cache/archiving:** `site:web.archive.org <URL>`  
+- **Social (public):** `site:twitter.com "term" since:2024-01-01` *(respect platform ToS)*
+
+---
+
+## 6) How to use this repo with ChatGPT
+
+Ask ChatGPT (with GitHub connected) to operate on files here:
+
+- “Create `notes/ukraine-energy-grid.md` using the Research Note template.”  
+- “Summarize all bullets in `reports/energy-imports-2024.md` into 5 claims with citations.”  
+- “Draft `queries/web-operators.md` with 10 task-oriented examples for sanctions research.”  
+- “Propose a PR adding `sources/eu-sanctions-portals.md` with links and update cadence.”
+
+---
+
+## 7) Quick test to confirm indexing
+
+After committing this file, search on GitHub for:
+repo:OSINT-purpose/OSINT-AI INDEX_TEST_TOKEN__OSINT-AI__2025-08-10
+If it appears, the repo is indexed and ChatGPT can access it.
+
+---
+
+## 8) License & disclaimer
+
+- **License:** MIT (you can change later).  
+- **Disclaimer:** Educational/academic OSINT only. You are responsible for compliance with law and platform policies.
+
+---
+
+## 9) TODO
+
+- [ ] Create `notes/first-checklist.md` from template.  
+- [ ] Add `queries/web-operators.md`.  
+- [ ] Add `sources/core-portals.md` (EU, UN, OECD, national gazettes).  
+- [ ] Verify indexing via the token above.
